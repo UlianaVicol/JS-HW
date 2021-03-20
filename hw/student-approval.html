@@ -1,0 +1,23 @@
+<script>
+    //IN: student general mark
+    //OUT: yes/no
+    
+    //variable
+    studentMark   = +prompt("mark?") // string
+    studentBudget = +prompt("mony?")
+
+    //constant
+    APPROVAL_MARK  = 7.0
+    CONTTRACT_COST =10000
+
+    approvedMark = studentMark >= APPROVAL_MARK
+    approvedMony = studentBudget >= CONTTRACT_COST
+
+    approved     = approvedMark || approvedMony
+    //approved   = studentMark >= APPROVAL_MARK || studentBudget >= CONTTRACT_COST
+
+    alert( "Is he approved? " + approved )
+
+
+
+</script>
